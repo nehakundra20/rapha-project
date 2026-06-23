@@ -1,0 +1,60 @@
+Boot log started
+Warning: Cgroup memory limit not set or cgroups not present.
+
+Looking for cf3:/bof.cfg ... OK, reading
+
+Total Memory: 385012MB  Chassis Type: 0x24   [ ref: 01d8d8f3fd4c; ]
+TiMOS-B-26.3.R1 both/x86_64 Nokia 7750 SR-1 Copyright (c) 2000-2026 Nokia.
+All rights reserved. All use subject to applicable license agreements.
+Built on Wed Mar 11 20:17:13 UTC 2026 by builder in /builds/263B/R1/panos
+
+Scheduler: using fair scheduler policy
+
+
+   ___                    ___           ___           ___
+  /\  \                  /\__\         /\  \         /\  \
+  \:\  \        ___     /::|  |       /::\  \       /::\  \
+   \:\  \      /\__\   /:|:|  |      /:/\:\  \     /:/\:\  \
+   /::\  \    _\/__/  /:/|:|__|__   /:/  \:\  \   _\:\~\:\  \
+  /:/\:\__\  /\__\   /:/ |::::\__\ /:/__/ \:\__\ /\ \:\ \:\__\
+ /:/  \/__/ /:/  /   \/__/~~/:/  / \:\  \ /:/  / \:\ \:\ \/__/
+/:/  /     /:/  /          /:/  /   \:\  /:/  /   \:\ \:\__\
+\/__/      \/__/          /:/  /     \:\/:/  /     \:\/:/  /
+                         /:/  /       \::/  /       \::/  /
+                         \/__/         \/__/         \/__/
+
+Running 64 bit architecture
+
+Time from clock is Tue Jun 23 19:17:39 2026 UTC
+Trace memory initialised
+Initial DNS resolving preference is ipv6-first
+
+Looking for cf3:/bof.cfg ... OK, reading
+
+Current Time: Tue Jun 23 19:17:42 UTC 2026
+Loading TiMOS License for 'TiMOS-B-26.3.R1' from location:
+   'cf3:\license.txt' ... OK
+
+Loading primary configuration file "cf3:\config.cfg"
+Commit 5 (1/1): load full-replace "cf3:\config.cfg"
+Loaded 475 lines in 0.1 seconds from file "cf3:\config.cfg"
+WARNING: MGMT_CORE #2204: Obsolete element - configure system grpc md-cli
+WARNING: MGMT_CORE #2204: Obsolete element - configure system grpc md-cli admin-state
+WARNING: MGMT_CORE #2204: Obsolete element - configure system security aaa local-profiles profile "administrative" grpc rpc-authorization md-cli-session
+Committing configuration ... finished in 0.0 seconds
+
+TiMOS-B-26.3.R1 both/x86_64 Nokia 7750 SR-1 Copyright (c) 2000-2026 Nokia.
+All rights reserved. All use subject to applicable license agreements.
+Built on Wed Mar 11 20:17:13 UTC 2026 by builder in /builds/263B/R1/panos
+
+
+................................................................
+:                  Welcome to Nokia SR OS!                     :
+:                                                              :
+:                                                              :
+: YANG:          https://yang.labctl.net/                      :
+: Community:     https://containerlab.dev/community/           :
+: Discord:       https://containerlab.dev/discord/             :
+................................................................
+
+Login: 

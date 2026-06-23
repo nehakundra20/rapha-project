@@ -1,0 +1,42 @@
+# TiMOS-B-26.3.R1 both/x86_64 Nokia 7750 SR-1 Copyright (c) 2000-2026 Nokia.
+# All rights reserved. All use subject to applicable license agreements.
+# Built on Wed Mar 11 20:17:13 UTC 2026 by builder in /builds/263B/R1/panos
+# Configuration format version 26.3 revision 0
+
+# Generated 2026-06-23T21:50:05.6Z by admin from 3fff:172:20:20::1
+# Commit ID 7
+#   Committed 2026-06-23T21:50:05.6Z by admin (MD-CLI) from 3fff:172:20:20::1
+
+    configure {
+        router "Base" {
++           bgp {
++               group "iBGP" {
++                   next-hop-self true
++                   peer-as 65001
++                   family {
++                       vpn-ipv4 true
++                   }
++               }
++               neighbor "10.10.10.1" {
++                   group "iBGP"
++               }
++               neighbor "10.10.10.2" {
++                   group "iBGP"
++               }
++               neighbor "10.10.10.3" {
++                   group "iBGP"
++               }
++           }
+        }
+    }
+
+persistent-indices {
+    description "Persistent indices are maintained by the system and must not be modified."
+    vrtr-if-id {
+        router-name "Base" interface-name "toCE14" vrtr-id 1 if-index 4
+        router-name "Base" interface-name "toR2" vrtr-id 1 if-index 2
+        router-name "Base" interface-name "toR3" vrtr-id 1 if-index 3
+    }
+}
+
+# Finished 2026-06-23T21:50:05.6Z
