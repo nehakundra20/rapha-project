@@ -3,12 +3,20 @@
 # Built on Wed Mar 11 20:17:13 UTC 2026 by builder in /builds/263B/R1/panos
 # Configuration format version 26.3 revision 0
 
-# Generated 2026-06-23T15:17:27.3Z by admin from 3fff:172:20:20::1
-# Commit ID 3
-#   Committed 2026-06-23T15:17:26.0Z by system (MD-CLI) from Console
-#   Log       "System booted version B-26.3.R1."
+# Generated 2026-06-23T15:21:34.1Z by system from Console
+# Commit ID 4
+#   Committed 2026-06-23T15:21:33.9Z by admin (MD-CLI) from 3fff:172:20:20::1
 
 configure {
+    card 1 {
+        card-type iom-1
+        mda 1 {
+            mda-type me6-100gb-qsfp28
+        }
+        mda 2 {
+            mda-type me12-100gb-qsfp28
+        }
+    }
     log {
         filter "1001" {
             named-entry "10" {
@@ -339,4 +347,4 @@ persistent-indices {
     description "Persistent indices are maintained by the system and must not be modified."
 }
 
-# Finished 2026-06-23T15:17:27.3Z
+# Finished 2026-06-23T15:21:34.2Z

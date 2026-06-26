@@ -3,10 +3,9 @@
 # Built on Wed Mar 11 20:17:13 UTC 2026 by builder in /builds/263B/R1/panos
 # Configuration format version 26.3 revision 0
 
-# Generated 2026-06-23T19:17:43.7Z by admin from 3fff:172:20:20::1
-# Commit ID 6
-#   Committed 2026-06-23T19:17:43.3Z by system (MD-CLI) from Console
-#   Log       "System booted version B-26.3.R1."
+# Generated 2026-06-23T21:33:27.8Z by system from Console
+# Commit ID 7
+#   Committed 2026-06-23T21:33:27.6Z by admin (MD-CLI) from 3fff:172:20:20::1
 
 configure {
     card 1 {
@@ -82,6 +81,7 @@ configure {
         admin-state enable
     }
     router "Base" {
+        autonomous-system 65001
         interface "system" {
             ipv4 {
                 primary {
@@ -118,6 +118,24 @@ configure {
                     address 10.1.3.3
                     prefix-length 24
                 }
+            }
+        }
+        bgp {
+            group "iBGP" {
+                next-hop-self true
+                peer-as 65001
+                family {
+                    vpn-ipv4 true
+                }
+            }
+            neighbor "10.10.10.2" {
+                group "iBGP"
+            }
+            neighbor "10.10.10.3" {
+                group "iBGP"
+            }
+            neighbor "10.10.10.4" {
+                group "iBGP"
             }
         }
         isis 0 {
@@ -470,4 +488,4 @@ persistent-indices {
     }
 }
 
-# Finished 2026-06-23T19:17:43.7Z
+# Finished 2026-06-23T21:33:27.8Z

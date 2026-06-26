@@ -3,9 +3,9 @@
 # Built on Wed Mar 11 20:17:13 UTC 2026 by builder in /builds/263B/R1/panos
 # Configuration format version 26.3 revision 0
 
-# Generated 2026-06-23T22:14:19.6Z by system from Console
-# Commit ID 10
-#   Committed 2026-06-23T22:14:19.5Z by admin (MD-CLI) from 3fff:172:20:20::1
+# Generated 2026-06-25T20:15:19.8Z by system from Console
+# Commit ID 14
+#   Committed 2026-06-25T20:15:19.7Z by admin (MD-CLI) from 3fff:172:20:20::1
 
 configure {
     card 1 {
@@ -61,6 +61,10 @@ configure {
     }
     port 1/1/c1/1 {
         admin-state enable
+        ethernet {
+            mode access
+            encap-type dot1q
+        }
     }
     port 1/1/c2 {
         admin-state enable
@@ -119,6 +123,8 @@ configure {
                 }
             }
         }
+        interface "toR12" {
+        }
         bgp {
             group "iBGP" {
                 next-hop-self true
@@ -154,9 +160,35 @@ configure {
                 interface-type point-to-point
             }
         }
+        ldp {
+            admin-state enable
+            interface-parameters {
+                interface "toCE12" {
+                    ipv4 {
+                    }
+                }
+                interface "toR1" {
+                    ipv4 {
+                    }
+                }
+                interface "toR4" {
+                    ipv4 {
+                    }
+                }
+            }
+        }
     }
     service {
-        sdp 8 {
+        epipe "epipe1" {
+            admin-state enable
+            service-id 10
+            customer "1"
+            spoke-sdp 3:10 {
+            }
+            sap 1/1/c1/1:10 {
+            }
+        }
+        sdp 3 {
             admin-state enable
             delivery-type mpls
             ldp true
@@ -493,8 +525,9 @@ persistent-indices {
     vrtr-if-id {
         router-name "Base" interface-name "toCE12" vrtr-id 1 if-index 4
         router-name "Base" interface-name "toR1" vrtr-id 1 if-index 2
+        router-name "Base" interface-name "toR12" vrtr-id 1 if-index 5
         router-name "Base" interface-name "toR4" vrtr-id 1 if-index 3
     }
 }
 
-# Finished 2026-06-23T22:14:19.8Z
+# Finished 2026-06-25T20:15:20.0Z

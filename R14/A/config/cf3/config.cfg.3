@@ -3,10 +3,9 @@
 # Built on Wed Mar 11 20:17:13 UTC 2026 by builder in /builds/263B/R1/panos
 # Configuration format version 26.3 revision 0
 
-# Generated 2026-06-23T15:38:51.7Z by admin from 3fff:172:20:20::1
-# Commit ID 8
-#   Committed 2026-06-23T15:38:50.5Z by system (MD-CLI) from Console
-#   Log       "System booted version B-26.3.R1."
+# Generated 2026-06-23T16:03:52.4Z by system from Console
+# Commit ID 9
+#   Committed 2026-06-23T16:03:52.2Z by admin (MD-CLI) from 3fff:172:20:20::1
 
 configure {
     card 1 {
@@ -62,6 +61,26 @@ configure {
     }
     port 1/1/c1/1 {
         admin-state enable
+    }
+    router "Base" {
+        interface "system" {
+            ipv4 {
+                primary {
+                    address 10.10.10.14
+                    prefix-length 32
+                }
+            }
+        }
+        interface "toR4" {
+            admin-state enable
+            port 1/1/c1/1
+            ipv4 {
+                primary {
+                    address 10.4.14.4
+                    prefix-length 24
+                }
+            }
+        }
     }
     system {
         name "R14"
@@ -355,6 +374,9 @@ configure {
 
 persistent-indices {
     description "Persistent indices are maintained by the system and must not be modified."
+    vrtr-if-id {
+        router-name "Base" interface-name "toR4" vrtr-id 1 if-index 2
+    }
 }
 
-# Finished 2026-06-23T15:38:51.7Z
+# Finished 2026-06-23T16:03:52.4Z

@@ -1,11 +1,12 @@
-# TiMOS-B-25.10.R1 both/x86_64 Nokia 7750 SR Copyright (c) 2000-2025 Nokia.
+# TiMOS-B-26.3.R1 both/x86_64 Nokia 7750 SR-1 Copyright (c) 2000-2026 Nokia.
 # All rights reserved. All use subject to applicable license agreements.
-# Built on Thu Oct 30 21:18:22 UTC 2025 by builder in /builds/2510B/R1/panos
-# Configuration format version 25.10 revision 0
+# Built on Wed Mar 11 20:17:13 UTC 2026 by builder in /builds/263B/R1/panos
+# Configuration format version 26.3 revision 0
 
-# Generated 2026-06-22T20:33:34.4Z by system from Console
-# Commit ID 10
-#   Committed 2026-06-22T20:33:34.0Z by admin (MD-CLI) from 3fff:172:20:20::1
+# Generated 2026-06-23T22:18:10.1Z by admin from 3fff:172:20:20::1
+# Commit ID 8
+#   Committed 2026-06-23T22:18:09.6Z by system (MD-CLI) from Console
+#   Log       "System booted version B-26.3.R1."
 
 configure {
     card 1 {
@@ -81,6 +82,7 @@ configure {
         admin-state enable
     }
     router "Base" {
+        autonomous-system 65001
         interface "system" {
             ipv4 {
                 primary {
@@ -117,6 +119,24 @@ configure {
                     address 10.3.4.4
                     prefix-length 24
                 }
+            }
+        }
+        bgp {
+            group "iBGP" {
+                next-hop-self true
+                peer-as 65001
+                family {
+                    vpn-ipv4 true
+                }
+            }
+            neighbor "10.10.10.1" {
+                group "iBGP"
+            }
+            neighbor "10.10.10.2" {
+                group "iBGP"
+            }
+            neighbor "10.10.10.4" {
+                group "iBGP"
             }
         }
         isis 0 {
@@ -156,9 +176,6 @@ configure {
                 system {
                     admin-state enable
                 }
-            }
-            md-cli {
-                admin-state enable
             }
             rib-api {
                 admin-state enable
@@ -257,7 +274,6 @@ configure {
                                 gnoi-system-reboot permit
                                 gnoi-system-rebootstatus permit
                                 gnoi-system-cancelreboot permit
-                                md-cli-session permit
                                 rib-api-getversion permit
                                 rib-api-modify permit
                             }
@@ -473,5 +489,4 @@ persistent-indices {
     }
 }
 
-# Finished 2026-06-22T20:33:34.4Z
-
+# Finished 2026-06-23T22:18:10.1Z

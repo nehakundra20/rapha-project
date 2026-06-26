@@ -3,9 +3,10 @@
 # Built on Wed Mar 11 20:17:13 UTC 2026 by builder in /builds/263B/R1/panos
 # Configuration format version 26.3 revision 0
 
-# Generated 2026-06-23T21:37:25.4Z by system from Console
-# Commit ID 7
-#   Committed 2026-06-23T21:37:25.2Z by admin (MD-CLI) from 3fff:172:20:20::1
+# Generated 2026-06-23T22:18:10.1Z by admin from 3fff:172:20:20::1
+# Commit ID 11
+#   Committed 2026-06-23T22:18:09.7Z by system (MD-CLI) from Console
+#   Log       "System booted version B-26.3.R1."
 
 configure {
     card 1 {
@@ -92,7 +93,6 @@ configure {
         }
         interface "toCE12" {
             admin-state enable
-            port 1/1/c1/1
             ipv4 {
                 primary {
                     address 10.2.12.12
@@ -153,6 +153,16 @@ configure {
             }
             interface "toR4" {
                 interface-type point-to-point
+            }
+        }
+    }
+    service {
+        sdp 8 {
+            admin-state enable
+            delivery-type mpls
+            ldp true
+            far-end {
+                ip-address 10.10.10.3
             }
         }
     }
@@ -488,4 +498,4 @@ persistent-indices {
     }
 }
 
-# Finished 2026-06-23T21:37:25.4Z
+# Finished 2026-06-23T22:18:10.1Z
