@@ -3,9 +3,12 @@
 # Built on Wed Mar 11 20:17:13 UTC 2026 by builder in /builds/263B/R1/panos
 # Configuration format version 26.3 revision 0
 
-# Generated 2026-06-23T16:03:36.2Z by system from Console
-# Commit ID 8
-#   Committed 2026-06-23T16:03:36.2Z by admin (MD-CLI) from 3fff:172:20:20::1
+# Generated 2026-06-25T19:54:34.2Z by admin from 3fff:172:20:20::1
+# Commit ID 12
+#   Committed 2026-06-25T19:54:34.2Z by admin (MD-CLI) from 3fff:172:20:20::1
+# Commit ID 11
+#   Committed 2026-06-23T22:18:09.7Z by system (MD-CLI) from Console
+#   Log       "System booted version B-26.3.R1."
 
 configure {
     card 1 {
@@ -61,6 +64,9 @@ configure {
     }
     port 1/1/c1/1 {
         admin-state enable
+        ethernet {
+            encap-type dot1q
+        }
     }
     router "Base" {
         interface "system" {
@@ -73,10 +79,19 @@ configure {
         }
         interface "toR2" {
             admin-state enable
-            port 1/1/c1/1
+            port 1/1/c1/1:10
             ipv4 {
                 primary {
                     address 10.2.12.2
+                    prefix-length 24
+                }
+            }
+        }
+        interface "toR2-2" {
+            port 1/1/c1/1:20
+            ipv4 {
+                primary {
+                    address 192.168.20.2
                     prefix-length 24
                 }
             }
@@ -327,7 +342,8 @@ persistent-indices {
     description "Persistent indices are maintained by the system and must not be modified."
     vrtr-if-id {
         router-name "Base" interface-name "toR2" vrtr-id 1 if-index 2
+        router-name "Base" interface-name "toR2-2" vrtr-id 1 if-index 3
     }
 }
 
-# Finished 2026-06-23T16:03:36.5Z
+# Finished 2026-06-25T19:54:34.2Z

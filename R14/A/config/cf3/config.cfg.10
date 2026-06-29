@@ -1,12 +1,12 @@
-# TiMOS-B-25.10.R1 both/x86_64 Nokia 7250 IXR Copyright (c) 2000-2025 Nokia.
+# TiMOS-B-26.3.R1 both/x86_64 Nokia 7250 IXR-e2 Copyright (c) 2000-2026 Nokia.
 # All rights reserved. All use subject to applicable license agreements.
-# Built on Thu Oct 30 21:18:22 UTC 2025 by builder in /builds/2510B/R1/panos
-# Configuration format version 25.10 revision 0
+# Built on Wed Mar 11 20:17:13 UTC 2026 by builder in /builds/263B/R1/panos
+# Configuration format version 26.3 revision 0
 
-# Generated 2026-06-19T19:16:58.3Z by admin from 3fff:172:20:20::1
-# Commit ID 1
-#   Committed 2026-06-19T19:16:56.2Z by system (MD-CLI) from Console
-#   Log       "System booted version B-25.10.R1."
+# Generated 2026-06-22T21:53:52.1Z by admin from 3fff:172:20:20::1
+# Commit ID 2
+#   Committed 2026-06-22T21:53:51.1Z by system (MD-CLI) from Console
+#   Log       "System booted version B-26.3.R1."
 
 configure {
     log {
@@ -64,9 +64,6 @@ configure {
                 system {
                     admin-state enable
                 }
-            }
-            md-cli {
-                admin-state enable
             }
         }
         management-interface {
@@ -162,7 +159,6 @@ configure {
                                 gnoi-system-reboot permit
                                 gnoi-system-rebootstatus permit
                                 gnoi-system-cancelreboot permit
-                                md-cli-session permit
                             }
                         }
                         netconf {
@@ -343,4 +339,4 @@ persistent-indices {
     description "Persistent indices are maintained by the system and must not be modified."
 }
 
-# Finished 2026-06-19T19:16:58.3Z
+# Finished 2026-06-22T21:53:52.1Z

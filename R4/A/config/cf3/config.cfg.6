@@ -1,14 +1,22 @@
-# TiMOS-B-26.3.R1 both/x86_64 Nokia 7750 SR-1 Copyright (c) 2000-2026 Nokia.
+# TiMOS-B-25.10.R1 both/x86_64 Nokia 7750 SR Copyright (c) 2000-2025 Nokia.
 # All rights reserved. All use subject to applicable license agreements.
-# Built on Wed Mar 11 20:17:13 UTC 2026 by builder in /builds/263B/R1/panos
-# Configuration format version 26.3 revision 0
+# Built on Thu Oct 30 21:18:22 UTC 2025 by builder in /builds/2510B/R1/panos
+# Configuration format version 25.10 revision 0
 
-# Generated 2026-06-23T15:17:26.5Z by admin from 3fff:172:20:20::1
-# Commit ID 3
-#   Committed 2026-06-23T15:17:26.0Z by system (MD-CLI) from Console
-#   Log       "System booted version B-26.3.R1."
+# Generated 2026-06-22T20:35:57.5Z by system from Console
+# Commit ID 10
+#   Committed 2026-06-22T20:35:57.4Z by admin (MD-CLI) from 3fff:172:20:20::1
 
 configure {
+    card 1 {
+        card-type iom-1
+        mda 1 {
+            mda-type me6-100gb-qsfp28
+        }
+        mda 2 {
+            mda-type me12-100gb-qsfp28
+        }
+    }
     log {
         filter "1001" {
             named-entry "10" {
@@ -45,6 +53,89 @@ configure {
             }
         }
     }
+    port 1/1/c1 {
+        admin-state enable
+        connector {
+            breakout c1-100g
+        }
+    }
+    port 1/1/c1/1 {
+        admin-state enable
+    }
+    port 1/1/c2 {
+        admin-state enable
+        connector {
+            breakout c1-100g
+        }
+    }
+    port 1/1/c2/1 {
+        admin-state enable
+    }
+    port 1/1/c3 {
+        admin-state enable
+        connector {
+            breakout c1-100g
+        }
+    }
+    port 1/1/c3/1 {
+        admin-state enable
+    }
+    router "Base" {
+        interface "system" {
+            ipv4 {
+                primary {
+                    address 10.10.10.4
+                    prefix-length 32
+                }
+            }
+        }
+        interface "toCE14" {
+            port 1/1/c1/1
+            ipv4 {
+                primary {
+                    address 10.4.14.14
+                    prefix-length 24
+                }
+            }
+        }
+        interface "toR2" {
+            admin-state enable
+            port 1/1/c3/1
+            ipv4 {
+                primary {
+                    address 10.2.4.4
+                    prefix-length 24
+                }
+            }
+        }
+        interface "toR3" {
+            admin-state enable
+            port 1/1/c2/1
+            ipv4 {
+                primary {
+                    address 10.3.4.3
+                    prefix-length 24
+                }
+            }
+        }
+        isis 0 {
+            admin-state enable
+            level-capability 2
+            area-address [49.0001]
+            interface "system" {
+                interface-type point-to-point
+            }
+            interface "toCE14" {
+                interface-type point-to-point
+            }
+            interface "toR2" {
+                interface-type point-to-point
+            }
+            interface "toR3" {
+                interface-type point-to-point
+            }
+        }
+    }
     system {
         name "R4"
         grpc {
@@ -64,6 +155,9 @@ configure {
                 system {
                     admin-state enable
                 }
+            }
+            md-cli {
+                admin-state enable
             }
             rib-api {
                 admin-state enable
@@ -86,7 +180,7 @@ configure {
         login-control {
             login-banner true
             pre-login-message {
-                message "................................................................\n:                  Welcome to Nokia SR OS!                     :\n:                                                              :\n:                                                              :\n: YANG:          https://yangbrowser.nokia.com/sros            :\n: Community:     https://containerlab.dev/community/           :\n: Discord:       https://containerlab.dev/discord/             :\n................................................................\n"
+                message "................................................................\n:                  Welcome to Nokia SR OS!                     :\n:                                                              :\n:                                                              :\n: YANG:          https://yang.labctl.net/                      :\n: Community:     https://containerlab.dev/community/           :\n: Discord:       https://containerlab.dev/discord/             :\n................................................................\n"
             }
         }
         security {
@@ -134,6 +228,10 @@ configure {
                             match "tools dump li"
                             action deny
                         }
+                        entry 113 {
+                            match "tools perform system security"
+                            action permit
+                        }
                         grpc {
                             rpc-authorization {
                                 gnmi-capabilities permit
@@ -158,6 +256,7 @@ configure {
                                 gnoi-system-reboot permit
                                 gnoi-system-rebootstatus permit
                                 gnoi-system-cancelreboot permit
+                                md-cli-session permit
                                 rib-api-getversion permit
                                 rib-api-modify permit
                             }
@@ -347,7 +446,7 @@ configure {
                 }
                 local-user {
                     user "admin" {
-                        password "$2y$10$SIzOkhKtXRLplQk8L12cQ.o/4cbMeMoVeUk670JapdqY0429QLjeS"
+                        password "$2y$10$/so2hBOVmnAJBiDheCCe..3rYpuy7AtnUFb3IPD8tfyDZlmucL9pO"
                         restricted-to-home false
                         access {
                             console true
@@ -366,6 +465,11 @@ configure {
 
 persistent-indices {
     description "Persistent indices are maintained by the system and must not be modified."
+    vrtr-if-id {
+        router-name "Base" interface-name "toCE14" vrtr-id 1 if-index 4
+        router-name "Base" interface-name "toR2" vrtr-id 1 if-index 2
+        router-name "Base" interface-name "toR3" vrtr-id 1 if-index 3
+    }
 }
 
-# Finished 2026-06-23T15:17:26.5Z
+# Finished 2026-06-22T20:35:57.7Z

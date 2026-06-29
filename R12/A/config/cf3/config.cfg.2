@@ -3,11 +3,11 @@
 # Built on Wed Mar 11 20:17:13 UTC 2026 by builder in /builds/263B/R1/panos
 # Configuration format version 26.3 revision 0
 
-# Generated 2026-06-23T15:50:32.0Z by admin from 3fff:172:20:20::1
-# Commit ID 7
-#   Committed 2026-06-23T15:50:32.0Z by admin (MD-CLI) from 3fff:172:20:20::1
-# Commit ID 6
-#   Committed 2026-06-23T15:38:50.2Z by system (MD-CLI) from Console
+# Generated 2026-06-23T22:06:08.1Z by admin from 3fff:172:20:20::1
+# Commit ID 10
+#   Committed 2026-06-23T22:06:08.1Z by admin (MD-CLI) from 3fff:172:20:20::1
+# Commit ID 9
+#   Committed 2026-06-23T19:17:42.9Z by system (MD-CLI) from Console
 #   Log       "System booted version B-26.3.R1."
 
 configure {
@@ -64,6 +64,9 @@ configure {
     }
     port 1/1/c1/1 {
         admin-state enable
+        ethernet {
+            encap-type dot1q
+        }
     }
     router "Base" {
         interface "system" {
@@ -75,6 +78,8 @@ configure {
             }
         }
         interface "toR2" {
+            admin-state enable
+            port 1/1/c1/1:10
             ipv4 {
                 primary {
                     address 10.2.12.2
@@ -331,4 +336,4 @@ persistent-indices {
     }
 }
 
-# Finished 2026-06-23T15:50:32.0Z
+# Finished 2026-06-23T22:06:08.1Z

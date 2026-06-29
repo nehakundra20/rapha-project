@@ -3,9 +3,9 @@
 # Built on Wed Mar 11 20:17:13 UTC 2026 by builder in /builds/263B/R1/panos
 # Configuration format version 26.3 revision 0
 
-# Generated 2026-06-23T21:44:06.5Z by system from Console
-# Commit ID 7
-#   Committed 2026-06-23T21:44:06.2Z by admin (MD-CLI) from 3fff:172:20:20::1
+# Generated 2026-06-25T20:10:23.2Z by system from Console
+# Commit ID 10
+#   Committed 2026-06-25T20:10:22.8Z by admin (MD-CLI) from 3fff:172:20:20::1
 
 configure {
     card 1 {
@@ -61,6 +61,10 @@ configure {
     }
     port 1/1/c1/1 {
         admin-state enable
+        ethernet {
+            mode access
+            encap-type dot1q
+        }
     }
     port 1/1/c2 {
         admin-state enable
@@ -92,7 +96,6 @@ configure {
         }
         interface "toCE13" {
             admin-state enable
-            port 1/1/c1/1
             ipv4 {
                 primary {
                     address 10.3.13.13
@@ -153,6 +156,42 @@ configure {
             }
             interface "toR4" {
                 interface-type point-to-point
+            }
+        }
+        ldp {
+            admin-state enable
+            interface-parameters {
+                interface "toCE13" {
+                    ipv4 {
+                    }
+                }
+                interface "toR1" {
+                    ipv4 {
+                    }
+                }
+                interface "toR4" {
+                    ipv4 {
+                    }
+                }
+            }
+        }
+    }
+    service {
+        epipe "epipe1" {
+            admin-state enable
+            service-id 10
+            customer "1"
+            spoke-sdp 2:10 {
+            }
+            sap 1/1/c1/1:10 {
+            }
+        }
+        sdp 2 {
+            admin-state enable
+            delivery-type mpls
+            ldp true
+            far-end {
+                ip-address 10.10.10.2
             }
         }
     }
@@ -488,4 +527,4 @@ persistent-indices {
     }
 }
 
-# Finished 2026-06-23T21:44:06.5Z
+# Finished 2026-06-25T20:10:23.2Z
