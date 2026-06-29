@@ -6,7 +6,7 @@
       "prefix": "clab",
       "mgmt": {
         "network": "clab",
-        "bridge": "br-4d54e9f91849",
+        "bridge": "br-659dfff6065c",
         "ipv4-subnet": "172.20.20.0/24",
         "ipv4-gw": "172.20.20.1",
         "ipv6-subnet": "3fff:172:20:20::/64",
@@ -28,15 +28,15 @@
       "image": "localhost/nokia/srsim:25.10.R1",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-address": "172.20.20.8",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-address": "3fff:172:20:20::8",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "1c:ef:00:00:00:00",
+      "mac-address": "1c:dc:00:00:00:00",
       "labels": {
-        "clab-git-branch": "main",
-        "clab-git-hash": "20498c1",
-        "clab-mgmt-net-bridge": "br-4d54e9f91849",
+        "clab-git-branch": "vpls",
+        "clab-git-hash": "efecd28",
+        "clab-mgmt-net-bridge": "br-659dfff6065c",
         "clab-node-group": "",
         "clab-node-kind": "nokia_srsim",
         "clab-node-lab-dir": "/etc/containerlab/lab-examples/mylabs/rapha-project/clab-rapha-project/R1",
@@ -61,15 +61,15 @@
       "image": "localhost/nokia/srsim:25.10.R1",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-address": "172.20.20.5",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "1c:ce:01:00:00:00",
+      "mac-address": "1c:78:01:00:00:00",
       "labels": {
-        "clab-git-branch": "main",
-        "clab-git-hash": "20498c1",
-        "clab-mgmt-net-bridge": "br-4d54e9f91849",
+        "clab-git-branch": "vpls",
+        "clab-git-hash": "efecd28",
+        "clab-mgmt-net-bridge": "br-659dfff6065c",
         "clab-node-group": "",
         "clab-node-kind": "nokia_srsim",
         "clab-node-lab-dir": "/etc/containerlab/lab-examples/mylabs/rapha-project/clab-rapha-project/R11",
@@ -94,15 +94,15 @@
       "image": "localhost/nokia/srsim:25.10.R1",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-address": "172.20.20.9",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::7",
+      "mgmt-ipv6-address": "3fff:172:20:20::9",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "1c:62:02:00:00:00",
+      "mac-address": "1c:a8:02:00:00:00",
       "labels": {
-        "clab-git-branch": "main",
-        "clab-git-hash": "20498c1",
-        "clab-mgmt-net-bridge": "br-4d54e9f91849",
+        "clab-git-branch": "vpls",
+        "clab-git-hash": "efecd28",
+        "clab-mgmt-net-bridge": "br-659dfff6065c",
         "clab-node-group": "",
         "clab-node-kind": "nokia_srsim",
         "clab-node-lab-dir": "/etc/containerlab/lab-examples/mylabs/rapha-project/clab-rapha-project/R12",
@@ -127,15 +127,15 @@
       "image": "localhost/nokia/srsim:25.10.R1",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-address": "172.20.20.6",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "1c:ad:03:00:00:00",
+      "mac-address": "1c:90:03:00:00:00",
       "labels": {
-        "clab-git-branch": "main",
-        "clab-git-hash": "20498c1",
-        "clab-mgmt-net-bridge": "br-4d54e9f91849",
+        "clab-git-branch": "vpls",
+        "clab-git-hash": "efecd28",
+        "clab-mgmt-net-bridge": "br-659dfff6065c",
         "clab-node-group": "",
         "clab-node-kind": "nokia_srsim",
         "clab-node-lab-dir": "/etc/containerlab/lab-examples/mylabs/rapha-project/clab-rapha-project/R13",
@@ -160,15 +160,15 @@
       "image": "localhost/nokia/srsim:25.10.R1",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.9",
+      "mgmt-ipv4-address": "172.20.20.4",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::9",
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "1c:5e:04:00:00:00",
+      "mac-address": "1c:d2:04:00:00:00",
       "labels": {
-        "clab-git-branch": "main",
-        "clab-git-hash": "20498c1",
-        "clab-mgmt-net-bridge": "br-4d54e9f91849",
+        "clab-git-branch": "vpls",
+        "clab-git-hash": "efecd28",
+        "clab-mgmt-net-bridge": "br-659dfff6065c",
         "clab-node-group": "",
         "clab-node-kind": "nokia_srsim",
         "clab-node-lab-dir": "/etc/containerlab/lab-examples/mylabs/rapha-project/clab-rapha-project/R14",
@@ -197,11 +197,11 @@
       "mgmt-ipv4-prefix-length": 24,
       "mgmt-ipv6-address": "3fff:172:20:20::3",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "1c:57:05:00:00:00",
+      "mac-address": "1c:e4:05:00:00:00",
       "labels": {
-        "clab-git-branch": "main",
-        "clab-git-hash": "20498c1",
-        "clab-mgmt-net-bridge": "br-4d54e9f91849",
+        "clab-git-branch": "vpls",
+        "clab-git-hash": "efecd28",
+        "clab-mgmt-net-bridge": "br-659dfff6065c",
         "clab-node-group": "",
         "clab-node-kind": "nokia_srsim",
         "clab-node-lab-dir": "/etc/containerlab/lab-examples/mylabs/rapha-project/clab-rapha-project/R2",
@@ -226,15 +226,15 @@
       "image": "localhost/nokia/srsim:25.10.R1",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.8",
+      "mgmt-ipv4-address": "172.20.20.7",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::8",
+      "mgmt-ipv6-address": "3fff:172:20:20::7",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "1c:27:06:00:00:00",
+      "mac-address": "1c:cf:06:00:00:00",
       "labels": {
-        "clab-git-branch": "main",
-        "clab-git-hash": "20498c1",
-        "clab-mgmt-net-bridge": "br-4d54e9f91849",
+        "clab-git-branch": "vpls",
+        "clab-git-hash": "efecd28",
+        "clab-mgmt-net-bridge": "br-659dfff6065c",
         "clab-node-group": "",
         "clab-node-kind": "nokia_srsim",
         "clab-node-lab-dir": "/etc/containerlab/lab-examples/mylabs/rapha-project/clab-rapha-project/R3",
@@ -259,15 +259,15 @@
       "image": "localhost/nokia/srsim:25.10.R1",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-address": "172.20.20.2",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "1c:8c:07:00:00:00",
+      "mac-address": "1c:2e:07:00:00:00",
       "labels": {
-        "clab-git-branch": "main",
-        "clab-git-hash": "20498c1",
-        "clab-mgmt-net-bridge": "br-4d54e9f91849",
+        "clab-git-branch": "vpls",
+        "clab-git-hash": "efecd28",
+        "clab-mgmt-net-bridge": "br-659dfff6065c",
         "clab-node-group": "",
         "clab-node-kind": "nokia_srsim",
         "clab-node-lab-dir": "/etc/containerlab/lab-examples/mylabs/rapha-project/clab-rapha-project/R4",
@@ -288,13 +288,13 @@
         "a": {
           "node": "R1",
           "interface": "e1-1-c2-1",
-          "mac": "aa:c1:ab:c2:69:bd",
+          "mac": "aa:c1:ab:31:3a:b4",
           "peer": "z"
         },
         "z": {
           "node": "R2",
           "interface": "e1-1-c2-1",
-          "mac": "aa:c1:ab:44:79:f5",
+          "mac": "aa:c1:ab:20:5b:41",
           "peer": "a"
         }
       }
@@ -304,13 +304,13 @@
         "a": {
           "node": "R1",
           "interface": "e1-1-c3-1",
-          "mac": "aa:c1:ab:83:7a:93",
+          "mac": "aa:c1:ab:89:80:f5",
           "peer": "z"
         },
         "z": {
           "node": "R3",
           "interface": "e1-1-c3-1",
-          "mac": "aa:c1:ab:2c:1d:e7",
+          "mac": "aa:c1:ab:40:f4:c2",
           "peer": "a"
         }
       }
@@ -320,13 +320,13 @@
         "a": {
           "node": "R3",
           "interface": "e1-1-c2-1",
-          "mac": "aa:c1:ab:da:3a:c9",
+          "mac": "aa:c1:ab:4b:a9:af",
           "peer": "z"
         },
         "z": {
           "node": "R4",
           "interface": "e1-1-c2-1",
-          "mac": "aa:c1:ab:a3:3a:52",
+          "mac": "aa:c1:ab:85:a3:ee",
           "peer": "a"
         }
       }
@@ -336,13 +336,13 @@
         "a": {
           "node": "R2",
           "interface": "e1-1-c3-1",
-          "mac": "aa:c1:ab:27:09:0c",
+          "mac": "aa:c1:ab:3c:a2:37",
           "peer": "z"
         },
         "z": {
           "node": "R4",
           "interface": "e1-1-c3-1",
-          "mac": "aa:c1:ab:d5:27:07",
+          "mac": "aa:c1:ab:4b:68:f2",
           "peer": "a"
         }
       }
@@ -352,13 +352,13 @@
         "a": {
           "node": "R1",
           "interface": "e1-1-c1-1",
-          "mac": "aa:c1:ab:34:19:ba",
+          "mac": "aa:c1:ab:46:a5:03",
           "peer": "z"
         },
         "z": {
           "node": "R11",
           "interface": "e1-1-c1-1",
-          "mac": "aa:c1:ab:56:e0:a0",
+          "mac": "aa:c1:ab:05:78:24",
           "peer": "a"
         }
       }
@@ -368,13 +368,13 @@
         "a": {
           "node": "R2",
           "interface": "e1-1-c1-1",
-          "mac": "aa:c1:ab:96:ad:26",
+          "mac": "aa:c1:ab:e9:44:e2",
           "peer": "z"
         },
         "z": {
           "node": "R12",
           "interface": "e1-1-c1-1",
-          "mac": "aa:c1:ab:c3:cd:4e",
+          "mac": "aa:c1:ab:66:11:a8",
           "peer": "a"
         }
       }
@@ -384,13 +384,13 @@
         "a": {
           "node": "R3",
           "interface": "e1-1-c1-1",
-          "mac": "aa:c1:ab:ac:3f:e5",
+          "mac": "aa:c1:ab:d0:e2:45",
           "peer": "z"
         },
         "z": {
           "node": "R13",
           "interface": "e1-1-c1-1",
-          "mac": "aa:c1:ab:65:2d:05",
+          "mac": "aa:c1:ab:57:03:7b",
           "peer": "a"
         }
       }
@@ -400,13 +400,13 @@
         "a": {
           "node": "R4",
           "interface": "e1-1-c1-1",
-          "mac": "aa:c1:ab:3a:a3:a5",
+          "mac": "aa:c1:ab:8a:98:2c",
           "peer": "z"
         },
         "z": {
           "node": "R14",
           "interface": "e1-1-c1-1",
-          "mac": "aa:c1:ab:1c:4f:9b",
+          "mac": "aa:c1:ab:15:0b:69",
           "peer": "a"
         }
       }
@@ -416,13 +416,13 @@
         "a": {
           "node": "R11",
           "interface": "e1-1-c4-1",
-          "mac": "aa:c1:ab:06:7d:fb",
+          "mac": "aa:c1:ab:3f:6c:4a",
           "peer": "z"
         },
         "z": {
           "node": "R1",
           "interface": "e1-1-c4-1",
-          "mac": "aa:c1:ab:b1:ec:ba",
+          "mac": "aa:c1:ab:fd:59:b2",
           "peer": "a"
         }
       }
@@ -432,13 +432,13 @@
         "a": {
           "node": "R12",
           "interface": "e1-1-c4-1",
-          "mac": "aa:c1:ab:4f:ae:39",
+          "mac": "aa:c1:ab:13:d8:99",
           "peer": "z"
         },
         "z": {
           "node": "R2",
           "interface": "e1-1-c4-1",
-          "mac": "aa:c1:ab:68:58:eb",
+          "mac": "aa:c1:ab:ae:b0:2f",
           "peer": "a"
         }
       }
@@ -448,13 +448,13 @@
         "a": {
           "node": "R13",
           "interface": "e1-1-c4-1",
-          "mac": "aa:c1:ab:a7:9b:fd",
+          "mac": "aa:c1:ab:03:83:10",
           "peer": "z"
         },
         "z": {
           "node": "R3",
           "interface": "e1-1-c4-1",
-          "mac": "aa:c1:ab:1c:fb:8f",
+          "mac": "aa:c1:ab:a6:1d:df",
           "peer": "a"
         }
       }
@@ -464,13 +464,13 @@
         "a": {
           "node": "R14",
           "interface": "e1-1-c4-1",
-          "mac": "aa:c1:ab:84:07:2b",
+          "mac": "aa:c1:ab:85:5d:04",
           "peer": "z"
         },
         "z": {
           "node": "R4",
           "interface": "e1-1-c4-1",
-          "mac": "aa:c1:ab:0e:32:03",
+          "mac": "aa:c1:ab:f5:ab:35",
           "peer": "a"
         }
       }

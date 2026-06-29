@@ -9,64 +9,64 @@
       "id": "R1",
       "interfacePattern": "1/1/c{n}/1",
       "position": {
-        "x": 320,
-        "y": 240
+        "x": 420,
+        "y": 160
       }
     },
     {
       "id": "R2",
       "interfacePattern": "1/1/c{n}/1",
       "position": {
-        "x": 460,
-        "y": 240
+        "x": 420,
+        "y": 260
       }
     },
     {
       "id": "R3",
       "interfacePattern": "1/1/c{n}/1",
       "position": {
-        "x": 320,
-        "y": 380
+        "x": 300,
+        "y": 160
       }
     },
     {
       "id": "R4",
       "interfacePattern": "1/1/c{n}/1",
       "position": {
-        "x": 460,
-        "y": 380
+        "x": 300,
+        "y": 260
       }
     },
     {
       "id": "R11",
       "interfacePattern": "1/1/c{n}/1",
       "position": {
-        "x": 160,
-        "y": 240
+        "x": 580,
+        "y": 160
       }
     },
     {
       "id": "R12",
       "interfacePattern": "1/1/c{n}/1",
       "position": {
-        "x": 600,
-        "y": 240
+        "x": 580,
+        "y": 260
       }
     },
     {
       "id": "R13",
       "interfacePattern": "1/1/c{n}/1",
       "position": {
-        "x": 160,
-        "y": 380
+        "x": 140,
+        "y": 160
       }
     },
     {
       "id": "R14",
       "interfacePattern": "1/1/c{n}/1",
       "position": {
-        "x": 600,
-        "y": 380
+        "x": 140,
+        "y": 260
       }
     }
   ],

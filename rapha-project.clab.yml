@@ -1,24 +1,24 @@
 name: rapha-project
 
 topology:
-  # kinds:
-  #   nokia_srsim:
-  #     image: localhost/nokia/srsim:25.10.R1
-  #     license: license_srsim.txt
-  #   linux:
-  #     image: ghcr.io/hellt/network-multitool
   kinds:
     nokia_srsim:
-      license: /opt/nokia/sros/license.txt
-      image: localhost/nokia/srsim:26.3.R1
-    nokia_srlinux:
-      license: /opt/nokia/srlinux/license.txt
-      image: ghcr.io/nokia/srlinux    
+      image: localhost/nokia/srsim:25.10.R1
+      license: license_srsim.txt
+    linux:
+      image: ghcr.io/hellt/network-multitool
+  # kinds:
+  #   nokia_srsim:
+  #     license: /opt/nokia/sros/license.txt
+  #     image: localhost/nokia/srsim:26.3.R1
+  #   nokia_srlinux:
+  #     license: /opt/nokia/srlinux/license.txt
+  #     image: ghcr.io/nokia/srlinux    
   nodes:
     R1:
       kind: nokia_srsim
       startup-config: clab-rapha-project/R1/A/config/cf3/config.cfg
-      # can also use this syntax instead: startup-config: R1/A/config/cf3/config.cfg
+      # can also use this syntax instead potentially: startup-config: R1/A/config/cf3/config.cfg
       #mgmt-ipv4: 10.10.10.1
     R2:
       kind: nokia_srsim
