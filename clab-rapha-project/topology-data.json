@@ -1,0 +1,495 @@
+{
+  "name": "rapha-project",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-e5cddc700fbe",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "R1": {
+      "index": "0",
+      "shortname": "R1",
+      "longname": "clab-rapha-project-R1",
+      "fqdn": "R1.rapha-project.io",
+      "group": "",
+      "labdir": "/etc/containerlab/lab-examples/rapha-project/clab-rapha-project/R1",
+      "kind": "nokia_srsim",
+      "image": "localhost/nokia/srsim:25.10.R1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1c:24:00:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-e5cddc700fbe",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srsim",
+        "clab-node-lab-dir": "/etc/containerlab/lab-examples/rapha-project/clab-rapha-project/R1",
+        "clab-node-longname": "clab-rapha-project-R1",
+        "clab-node-name": "R1",
+        "clab-node-type": "SR-1",
+        "clab-owner": "nkundra",
+        "clab-topo-file": "/etc/containerlab/lab-examples/rapha-project/rapha-project.clab.yml",
+        "containerlab": "rapha-project"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R11": {
+      "index": "1",
+      "shortname": "R11",
+      "longname": "clab-rapha-project-R11",
+      "fqdn": "R11.rapha-project.io",
+      "group": "",
+      "labdir": "/etc/containerlab/lab-examples/rapha-project/clab-rapha-project/R11",
+      "kind": "nokia_srsim",
+      "image": "localhost/nokia/srsim:25.10.R1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::7",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1c:15:01:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-e5cddc700fbe",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srsim",
+        "clab-node-lab-dir": "/etc/containerlab/lab-examples/rapha-project/clab-rapha-project/R11",
+        "clab-node-longname": "clab-rapha-project-R11",
+        "clab-node-name": "R11",
+        "clab-node-type": "SR-1",
+        "clab-owner": "nkundra",
+        "clab-topo-file": "/etc/containerlab/lab-examples/rapha-project/rapha-project.clab.yml",
+        "containerlab": "rapha-project"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R12": {
+      "index": "2",
+      "shortname": "R12",
+      "longname": "clab-rapha-project-R12",
+      "fqdn": "R12.rapha-project.io",
+      "group": "",
+      "labdir": "/etc/containerlab/lab-examples/rapha-project/clab-rapha-project/R12",
+      "kind": "nokia_srsim",
+      "image": "localhost/nokia/srsim:25.10.R1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1c:e8:02:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-e5cddc700fbe",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srsim",
+        "clab-node-lab-dir": "/etc/containerlab/lab-examples/rapha-project/clab-rapha-project/R12",
+        "clab-node-longname": "clab-rapha-project-R12",
+        "clab-node-name": "R12",
+        "clab-node-type": "SR-1",
+        "clab-owner": "nkundra",
+        "clab-topo-file": "/etc/containerlab/lab-examples/rapha-project/rapha-project.clab.yml",
+        "containerlab": "rapha-project"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R13": {
+      "index": "3",
+      "shortname": "R13",
+      "longname": "clab-rapha-project-R13",
+      "fqdn": "R13.rapha-project.io",
+      "group": "",
+      "labdir": "/etc/containerlab/lab-examples/rapha-project/clab-rapha-project/R13",
+      "kind": "nokia_srsim",
+      "image": "localhost/nokia/srsim:25.10.R1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1c:6a:03:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-e5cddc700fbe",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srsim",
+        "clab-node-lab-dir": "/etc/containerlab/lab-examples/rapha-project/clab-rapha-project/R13",
+        "clab-node-longname": "clab-rapha-project-R13",
+        "clab-node-name": "R13",
+        "clab-node-type": "SR-1",
+        "clab-owner": "nkundra",
+        "clab-topo-file": "/etc/containerlab/lab-examples/rapha-project/rapha-project.clab.yml",
+        "containerlab": "rapha-project"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R14": {
+      "index": "4",
+      "shortname": "R14",
+      "longname": "clab-rapha-project-R14",
+      "fqdn": "R14.rapha-project.io",
+      "group": "",
+      "labdir": "/etc/containerlab/lab-examples/rapha-project/clab-rapha-project/R14",
+      "kind": "nokia_srsim",
+      "image": "localhost/nokia/srsim:25.10.R1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1c:d1:04:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-e5cddc700fbe",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srsim",
+        "clab-node-lab-dir": "/etc/containerlab/lab-examples/rapha-project/clab-rapha-project/R14",
+        "clab-node-longname": "clab-rapha-project-R14",
+        "clab-node-name": "R14",
+        "clab-node-type": "SR-1",
+        "clab-owner": "nkundra",
+        "clab-topo-file": "/etc/containerlab/lab-examples/rapha-project/rapha-project.clab.yml",
+        "containerlab": "rapha-project"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R2": {
+      "index": "5",
+      "shortname": "R2",
+      "longname": "clab-rapha-project-R2",
+      "fqdn": "R2.rapha-project.io",
+      "group": "",
+      "labdir": "/etc/containerlab/lab-examples/rapha-project/clab-rapha-project/R2",
+      "kind": "nokia_srsim",
+      "image": "localhost/nokia/srsim:25.10.R1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.9",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::9",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1c:0e:05:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-e5cddc700fbe",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srsim",
+        "clab-node-lab-dir": "/etc/containerlab/lab-examples/rapha-project/clab-rapha-project/R2",
+        "clab-node-longname": "clab-rapha-project-R2",
+        "clab-node-name": "R2",
+        "clab-node-type": "SR-1",
+        "clab-owner": "nkundra",
+        "clab-topo-file": "/etc/containerlab/lab-examples/rapha-project/rapha-project.clab.yml",
+        "containerlab": "rapha-project"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R3": {
+      "index": "6",
+      "shortname": "R3",
+      "longname": "clab-rapha-project-R3",
+      "fqdn": "R3.rapha-project.io",
+      "group": "",
+      "labdir": "/etc/containerlab/lab-examples/rapha-project/clab-rapha-project/R3",
+      "kind": "nokia_srsim",
+      "image": "localhost/nokia/srsim:25.10.R1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.8",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::8",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1c:4b:06:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-e5cddc700fbe",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srsim",
+        "clab-node-lab-dir": "/etc/containerlab/lab-examples/rapha-project/clab-rapha-project/R3",
+        "clab-node-longname": "clab-rapha-project-R3",
+        "clab-node-name": "R3",
+        "clab-node-type": "SR-1",
+        "clab-owner": "nkundra",
+        "clab-topo-file": "/etc/containerlab/lab-examples/rapha-project/rapha-project.clab.yml",
+        "containerlab": "rapha-project"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R4": {
+      "index": "7",
+      "shortname": "R4",
+      "longname": "clab-rapha-project-R4",
+      "fqdn": "R4.rapha-project.io",
+      "group": "",
+      "labdir": "/etc/containerlab/lab-examples/rapha-project/clab-rapha-project/R4",
+      "kind": "nokia_srsim",
+      "image": "localhost/nokia/srsim:25.10.R1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1c:5e:07:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-e5cddc700fbe",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srsim",
+        "clab-node-lab-dir": "/etc/containerlab/lab-examples/rapha-project/clab-rapha-project/R4",
+        "clab-node-longname": "clab-rapha-project-R4",
+        "clab-node-name": "R4",
+        "clab-node-type": "SR-1",
+        "clab-owner": "nkundra",
+        "clab-topo-file": "/etc/containerlab/lab-examples/rapha-project/rapha-project.clab.yml",
+        "containerlab": "rapha-project"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "R1",
+          "interface": "e1-1-c2-1",
+          "mac": "aa:c1:ab:34:4f:49",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R2",
+          "interface": "e1-1-c2-1",
+          "mac": "aa:c1:ab:35:83:34",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R1",
+          "interface": "e1-1-c3-1",
+          "mac": "aa:c1:ab:9c:99:3b",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R3",
+          "interface": "e1-1-c3-1",
+          "mac": "aa:c1:ab:1a:28:0e",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R3",
+          "interface": "e1-1-c2-1",
+          "mac": "aa:c1:ab:15:30:01",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R4",
+          "interface": "e1-1-c2-1",
+          "mac": "aa:c1:ab:e4:c2:d0",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R2",
+          "interface": "e1-1-c3-1",
+          "mac": "aa:c1:ab:1f:43:75",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R4",
+          "interface": "e1-1-c3-1",
+          "mac": "aa:c1:ab:8f:5b:f5",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R1",
+          "interface": "e1-1-c1-1",
+          "mac": "aa:c1:ab:fb:c8:8c",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R11",
+          "interface": "e1-1-c1-1",
+          "mac": "aa:c1:ab:f9:75:c7",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R2",
+          "interface": "e1-1-c1-1",
+          "mac": "aa:c1:ab:a2:7c:f6",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R12",
+          "interface": "e1-1-c1-1",
+          "mac": "aa:c1:ab:ea:dd:96",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R3",
+          "interface": "e1-1-c1-1",
+          "mac": "aa:c1:ab:00:82:f0",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R13",
+          "interface": "e1-1-c1-1",
+          "mac": "aa:c1:ab:04:65:fc",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R4",
+          "interface": "e1-1-c1-1",
+          "mac": "aa:c1:ab:80:10:d9",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R14",
+          "interface": "e1-1-c1-1",
+          "mac": "aa:c1:ab:99:06:8b",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R11",
+          "interface": "e1-1-c4-1",
+          "mac": "aa:c1:ab:62:f0:18",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R1",
+          "interface": "e1-1-c4-1",
+          "mac": "aa:c1:ab:8e:b3:22",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R12",
+          "interface": "e1-1-c4-1",
+          "mac": "aa:c1:ab:6a:b4:0a",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R2",
+          "interface": "e1-1-c4-1",
+          "mac": "aa:c1:ab:88:0d:2a",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R13",
+          "interface": "e1-1-c4-1",
+          "mac": "aa:c1:ab:b9:89:4c",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R3",
+          "interface": "e1-1-c4-1",
+          "mac": "aa:c1:ab:b5:09:99",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R14",
+          "interface": "e1-1-c4-1",
+          "mac": "aa:c1:ab:a2:12:69",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R4",
+          "interface": "e1-1-c4-1",
+          "mac": "aa:c1:ab:03:c2:d3",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R13",
+          "interface": "e1-1-c6-1",
+          "mac": "aa:c1:ab:e0:f4:12",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R3",
+          "interface": "e1-1-c6-1",
+          "mac": "aa:c1:ab:89:b6:20",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R12",
+          "interface": "e1-1-c6-1",
+          "mac": "aa:c1:ab:b0:76:b7",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R2",
+          "interface": "e1-1-c6-1",
+          "mac": "aa:c1:ab:3b:54:8f",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+# TiMOS-B-25.10.R1 both/x86_64 Nokia 7750 SR Copyright (c) 2000-2025 Nokia.
+# All rights reserved. All use subject to applicable license agreements.
+# Built on Thu Oct 30 21:18:22 UTC 2025 by builder in /builds/2510B/R1/panos
+# Configuration format version 25.10 revision 0
+
+# Generated 2026-06-29T19:50:59.9Z by admin from 3fff:172:20:20::1
+# Commit ID 31
+#   Committed 2026-06-29T19:50:59.9Z by admin (MD-CLI) from 3fff:172:20:20::1
+
+    configure {
+        router "Base" {
+            ldp {
+                interface-parameters {
++                   interface "toR12" {
++                       ipv4 {
++                       }
++                   }
+                }
+            }
+        }
+    }
+
+persistent-indices {
+    description "Persistent indices are maintained by the system and must not be modified."
+    vrtr-if-id {
+        router-name "Base" interface-name "toR1" vrtr-id 1 if-index 2
+        router-name "Base" interface-name "toR12" vrtr-id 1 if-index 5
+        router-name "Base" interface-name "toR4" vrtr-id 1 if-index 3
+    }
+}
+
+# Finished 2026-06-29T19:50:59.9Z
