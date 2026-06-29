@@ -300,7 +300,7 @@ The following service IDs and SDP associations are used within this lab.
 
 | Service | Type | Service ID | PE Nodes |
 |---------|------|------------|----------|
-| EPIPE | Point-to-Point Layer 2 VPN | 10 | PE2 ↔ PE3 |
+| EPIPE | Point-to-Point Layer 2 VPN | 20 | PE2 ↔ PE3 |
 | VPLS | Multipoint Layer 2 VPN | 100 | PE1, PE2, PE3, PE4 |
 | VPRN | Layer 3 VPN | ??? | PE1, PE2, PE3, PE4 |
 
@@ -362,6 +362,12 @@ Verify service transport paths:
 show service sdp <sdp-id> (sdp-id: 2 or 3)
 ```
 
+To demonstrate connectivity between CEs:
+
+```
+ping 192.168.30.2 (from CE3, to CE2)
+ping 192.168.30.3 (from CE2, to CE3)
+```
 ---
 
 ## VPLS (Multipoint Layer 2 VPN)
@@ -389,6 +395,14 @@ Verify customer-facing interfaces:
 show service sap-using
 ```
 
+To demonstrate connectivity between CEs:
+
+```
+ping 10.10.1.11 (from any CE to get to CE1)
+ping 10.10.1.12 (from any CE to get to CE2)
+ping 10.10.1.13 (from any CE to get to CE3)
+ping 10.10.1.14 (from any CE to get to CE4)
+```
 ---
 
 # Layer 3 Services
