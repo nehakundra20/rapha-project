@@ -15,18 +15,18 @@ all:
         ansible_password: NokiaSros1!
       hosts:
         clab-rapha-project-R1:
-          ansible_host: 172.20.20.8
-        clab-rapha-project-R11:
-          ansible_host: 172.20.20.5
-        clab-rapha-project-R12:
-          ansible_host: 172.20.20.9
-        clab-rapha-project-R13:
-          ansible_host: 172.20.20.6
-        clab-rapha-project-R14:
-          ansible_host: 172.20.20.4
-        clab-rapha-project-R2:
-          ansible_host: 172.20.20.3
-        clab-rapha-project-R3:
-          ansible_host: 172.20.20.7
-        clab-rapha-project-R4:
           ansible_host: 172.20.20.2
+        clab-rapha-project-R11:
+          ansible_host: 172.20.20.7
+        clab-rapha-project-R12:
+          ansible_host: 172.20.20.5
+        clab-rapha-project-R13:
+          ansible_host: 172.20.20.3
+        clab-rapha-project-R14:
+          ansible_host: 172.20.20.6
+        clab-rapha-project-R2:
+          ansible_host: 172.20.20.9
+        clab-rapha-project-R3:
+          ansible_host: 172.20.20.8
+        clab-rapha-project-R4:
+          ansible_host: 172.20.20.4

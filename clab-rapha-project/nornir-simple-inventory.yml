@@ -3,39 +3,39 @@ R1:
     username: admin
     password: NokiaSros1!
     platform: nokia_srsim
-    hostname: 172.20.20.8
+    hostname: 172.20.20.2
 R11:
     username: admin
     password: NokiaSros1!
     platform: nokia_srsim
-    hostname: 172.20.20.5
+    hostname: 172.20.20.7
 R12:
     username: admin
     password: NokiaSros1!
     platform: nokia_srsim
-    hostname: 172.20.20.9
+    hostname: 172.20.20.5
 R13:
     username: admin
     password: NokiaSros1!
     platform: nokia_srsim
-    hostname: 172.20.20.6
+    hostname: 172.20.20.3
 R14:
     username: admin
     password: NokiaSros1!
     platform: nokia_srsim
-    hostname: 172.20.20.4
+    hostname: 172.20.20.6
 R2:
     username: admin
     password: NokiaSros1!
     platform: nokia_srsim
-    hostname: 172.20.20.3
+    hostname: 172.20.20.9
 R3:
     username: admin
     password: NokiaSros1!
     platform: nokia_srsim
-    hostname: 172.20.20.7
+    hostname: 172.20.20.8
 R4:
     username: admin
     password: NokiaSros1!
     platform: nokia_srsim
-    hostname: 172.20.20.2
+    hostname: 172.20.20.4

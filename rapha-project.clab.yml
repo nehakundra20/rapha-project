@@ -4,7 +4,7 @@ topology:
   kinds:
     nokia_srsim:
       image: localhost/nokia/srsim:25.10.R1
-      license: license_srsim.txt
+      license: license_srsim.1.txt
     linux:
       image: ghcr.io/hellt/network-multitool
   # kinds:
@@ -63,4 +63,7 @@ topology:
     - endpoints: ["R12:1/1/c4/1", "R2:1/1/c4/1"]
     - endpoints: ["R13:1/1/c4/1", "R3:1/1/c4/1"]
     - endpoints: ["R14:1/1/c4/1", "R4:1/1/c4/1"]
+    - endpoints: ["R13:1/1/c6/1", "R3:1/1/c6/1"]
+    - endpoints: ["R12:1/1/c6/1", "R2:1/1/c6/1"]
+    
 

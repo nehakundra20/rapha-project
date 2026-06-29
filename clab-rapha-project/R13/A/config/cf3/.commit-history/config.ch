@@ -3,7 +3,7 @@
         user "system"
         type md-cli
         from console
-        location "cf3:\config.cfg.1"
+        location "cf3:\config.cfg.4"
         log "System booted version B-25.10.R1."
     }
     commit-id 2 {
@@ -46,7 +46,7 @@
         user "system"
         type md-cli
         from console
-        location "cf3:\config.cfg"
+        location "cf3:\config.cfg.2"
         log "System booted version B-25.10.R1."
     }
     commit-id 8 {
@@ -132,4 +132,55 @@
         type md-cli
         from console
         log "System booted version B-25.10.R1."
+    }
+    commit-id 20 {
+        timestamp 2026-06-29T18:54:11.4Z
+        user "system"
+        type md-cli
+        from console
+        log "System booted version B-25.10.R1."
+    }
+    commit-id 21 {
+        timestamp 2026-06-29T19:02:15.3Z
+        user "system"
+        type md-cli
+        from console
+        log "System booted version B-25.10.R1."
+    }
+    commit-id 22 {
+        timestamp 2026-06-29T19:41:11.1Z
+        user "admin"
+        type md-cli
+        from 3fff:172:20:20::1
+        location "cf3:\config.cfg.3"
+    }
+    commit-id 23 {
+        timestamp 2026-06-29T19:41:47.9Z
+        user "admin"
+        type md-cli
+        from 3fff:172:20:20::1
+        location "cf3:\config.cfg.1"
+        increment-location "cf3:\.commit-history\config-2026-06-29T19-41-47.9Z-23.is"
+    }
+    commit-id 24 {
+        timestamp 2026-06-29T20:04:15.9Z
+        user "admin"
+        type md-cli
+        from 3fff:172:20:20::1
+        location "cf3:\config.cfg.1"
+        increment-location "cf3:\.commit-history\config-2026-06-29T20-04-15.9Z-24.is"
+    }
+    commit-id 25 {
+        timestamp 2026-06-29T20:42:31.0Z
+        user "system"
+        type md-cli
+        from console
+        log "System booted version B-25.10.R1."
+    }
+    commit-id 26 {
+        timestamp 2026-06-29T21:06:11.7Z
+        user "admin"
+        type md-cli
+        from 3fff:172:20:20::1
+        location "cf3:\config.cfg"
     }
